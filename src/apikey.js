@@ -18,7 +18,6 @@ export async function checkWeather(city) {
     weather.classList.add("hidden");
   } else {
     var data = await response.json();
-    console.log(data);
 
     cityName.innerHTML = data.name;
     temp.innerHTML = Math.floor(data.main.temp) + "°C";
